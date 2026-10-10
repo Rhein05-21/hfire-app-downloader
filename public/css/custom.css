@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary-orange: #f97316;
+  --primary-orange-hover: #ea580c;
+  --primary-orange-light: #ffedd5;
+  --bg-black: #09090b;
+  --bg-card: #121215;
+  --bg-card-hover: #18181c;
+  --border-subtle: rgba(249, 115, 22, 0.15);
+  --border-focus: rgba(249, 115, 22, 0.5);
+  --glow-orange: 0 0 35px rgba(249, 115, 22, 0.28);
+}
+
+* {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-black);
+  color: #f4f4f5;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Background Radial Glow */
+.bg-mesh {
+  background: 
+    radial-gradient(circle at 50% 0%, rgba(249, 115, 22, 0.16) 0%, transparent 60%),
+    radial-gradient(circle at 10% 30%, rgba(234, 88, 12, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 90% 70%, rgba(249, 115, 22, 0.06) 0%, transparent 45%),
+    #09090b;
+}
+
+/* Glowing Elements */
+.glow-orange {
+  box-shadow: var(--glow-orange);
+}
+
+.glow-orange-sm {
+  box-shadow: 0 0 15px rgba(249, 115, 22, 0.25);
+}
+
+.glow-orange-btn {
+  box-shadow: 0 4px 20px rgba(249, 115, 22, 0.35);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glow-orange-btn:hover {
+  box-shadow: 0 6px 30px rgba(249, 115, 22, 0.55);
+  transform: translateY(-2px);
+}
+
+.glow-orange-btn:active {
+  transform: translateY(0);
+}
+
+/* Glassmorphism Card */
+.glass-card {
+  background: rgba(18, 18, 21, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-subtle);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.glass-card:hover {
+  border-color: var(--border-focus);
+}
+
+/* Fiery Gradient Text */
+.text-gradient-orange {
+  background: linear-gradient(135deg, #fb923c 0%, #f97316 45%, #ef4444 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ea580c;
+}
+
+/* Pulse animation for logo */
+@keyframes flame-pulse {
+  0%, 100% {
+    box-shadow: 0 0 25px rgba(249, 115, 22, 0.3), inset 0 0 15px rgba(249, 115, 22, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(249, 115, 22, 0.55), inset 0 0 20px rgba(249, 115, 22, 0.2);
+  }
+}
+
+.logo-flame-container {
+  animation: flame-pulse 3s infinite ease-in-out;
+}

@@ -1,0 +1,30 @@
+{
+  "appName": "HFire",
+  "tagline": "Fast, Smooth & Lightweight Media Experience",
+  "description": "Download official HFire APK packages for Android smartphones.",
+  "adminPassword": "052105Rhein",
+  "userApp": {
+    "name": "HFire App",
+    "badge": "Resident App",
+    "version": "1.0.0",
+    "releaseDate": "September 2026",
+    "fileSize": "95.7 MB",
+    "minAndroid": "Android 6.0+",
+    "targetArch": "Universal",
+    "apkFileName": "HFire-v1.0.0.apk",
+    "downloadUrl": "/download?app=user",
+    "sha256": "a5390d982144256119b5ad16709a9eead756dc2190689e4c3ab19c37a8835031"
+  },
+  "adminApp": {
+    "name": "H-Fire Admin",
+    "badge": "Admin App",
+    "version": "1.0.3",
+    "releaseDate": "September 2026",
+    "fileSize": "114.6 MB",
+    "minAndroid": "Android 6.0+",
+    "targetArch": "Universal",
+    "apkFileName": "HFire-Admin-v1.0.3.apk",
+    "downloadUrl": "/download?app=admin",
+    "sha256": "270daccc2c04c0995969c6192d8eedf019253a0849ca5e8c4923b4bc79cbc8bc"
+  }
+}

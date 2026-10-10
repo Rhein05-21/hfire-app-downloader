@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HFire - Download Official APK</title>
+  <meta name="description" content="Download the latest HFire APK for Android smartphones, tablets, and Amazon Firestick. Fast, secure, and lightweight.">
+  
+  <!-- Favicon using HFire Logo -->
+  <link rel="icon" type="image/png" href="/assets/h-fire_logo.png">
+  <link rel="apple-touch-icon" href="/assets/h-fire_logo.png">
+
+  <!-- Tailwind CSS via CDN with custom config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#09090b',
+              card: '#121215',
+              border: 'rgba(249, 115, 22, 0.2)',
+              orange: '#f97316',
+              darkorange: '#ea580c',
+              lightorange: '#ffedd5',
+              glow: 'rgba(249, 115, 22, 0.4)'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS for Orange & Black Glow Effects -->
+  <link rel="stylesheet" href="/css/custom.css">
+</head>
+<body class="bg-mesh min-h-screen flex flex-col text-zinc-100 selection:bg-orange-500 selection:text-black">
+
+  <!-- Navigation Bar -->
+  <header class="sticky top-0 z-40 bg-zinc-950/80 backdrop-blur-md border-b border-orange-500/15">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Brand Logo & Name -->
+      <a href="/" class="flex items-center gap-3.5 group">
+        <div class="relative w-11 h-11 rounded-xl bg-black border border-orange-500/40 p-1 flex items-center justify-center overflow-hidden group-hover:border-orange-500 transition-colors shadow-[0_0_15px_rgba(249,115,22,0.25)]">
+          <img src="/assets/h-fire_logo.png" alt="HFire Logo" class="w-full h-full object-contain">
+        </div>
+        <div class="flex flex-col">
+          <span class="text-2xl font-black tracking-wider text-white flex items-center gap-1.5">
+            H<span class="text-orange-500">FIRE</span>
+          </span>
+          <span class="text-[10px] tracking-widest uppercase font-semibold text-orange-400/80 -mt-1">APK Downloader</span>
+        </div>
+      </a>
+
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-3">
+
+        <button id="nav-download-btn" class="px-5 py-2.5 rounded-xl bg-orange-600 hover:bg-orange-500 text-black font-bold text-sm glow-orange-btn flex items-center gap-2 transition-all">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Download</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="flex-1 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16 w-full space-y-20">
+
+    <!-- HERO SECTION -->
+    <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <!-- Hero Left: Text & Download Actions -->
+      <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs font-semibold uppercase tracking-wider">
+          <span class="w-2 h-2 rounded-full bg-orange-500 animate-ping"></span>
+          <span>Latest Official Release</span>
+          <span class="text-zinc-500">•</span>
+          <span data-bind="version" class="text-white font-bold">v1.0.0</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-white">
+          Download <span class="text-gradient-orange">HFire APK</span>
+        </h1>
+
+        <!-- Subtitle & Description -->
+        <p data-bind="description" class="text-lg text-zinc-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+          Get the official HFire Android application package for Android phones, tablets, smart TVs, and Amazon Firestick.
+        </p>
+
+        <!-- Specs Highlights Chips -->
+        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-1">
+          <div class="px-3 py-1.5 rounded-lg bg-zinc-900 border border-zinc-800 text-xs font-medium text-zinc-300 flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5 text-orange-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2Z"/></svg>
+            <span>Size: <strong data-bind="fileSize" class="text-white">18.5 MB</strong></span>
+          </div>
+          <div class="px-3 py-1.5 rounded-lg bg-zinc-900 border border-zinc-800 text-xs font-medium text-zinc-300 flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5 text-orange-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/></svg>
+            <span data-bind="minAndroid">Android 5.0+</span>
+          </div>
+          <div class="px-3 py-1.5 rounded-lg bg-emerald-950/40 border border-emerald-500/30 text-xs font-medium text-emerald-400 flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            <span>Verified 100% Virus-Free</span>
+          </div>
+        </div>
+
+        <!-- DUAL DOWNLOAD CARDS -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+          
+          <!-- Card 1: HFire User App -->
+          <div class="glass-card rounded-2xl p-5 border border-orange-500/40 space-y-4 hover:border-orange-500 transition-all text-left">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-full bg-orange-500/15 border border-orange-500/30 text-orange-400 text-[11px] font-bold uppercase tracking-wider">
+                User App
+              </span>
+              <span class="text-xs font-mono text-zinc-400">
+                <span data-bind="userAppVersion">v1.0.0</span> • <span data-bind="userAppSize">18.5 MB</span>
+              </span>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-orange-500"></span>
+                HFire App
+              </h3>
+              <p class="text-xs text-zinc-400 mt-1">Official media and playback app for Android phones, tablets & TV.</p>
+            </div>
+
+            <div class="pt-2 flex items-center gap-2">
+              <button id="download-user-btn" class="flex-1 py-3 px-4 rounded-xl bg-orange-500 hover:bg-orange-400 text-black font-extrabold text-sm glow-orange-btn flex items-center justify-center gap-2 transition-all cursor-pointer">
+                <svg class="w-4 h-4 text-black" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>Download APK</span>
+              </button>
+              <button data-qr-target="user" class="open-qr-trigger p-3 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 hover:border-orange-500/50 text-zinc-300 hover:text-white transition-all flex items-center justify-center cursor-pointer" title="Scan QR Code for User App">
+                <svg class="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect width="5" height="5" x="3" y="3" rx="1"/><rect width="5" height="5" x="16" y="3" rx="1"/><rect width="5" height="5" x="3" y="16" rx="1"/><path d="M21 16h-3a2 2 0 0 0-2 2v3"/><path d="M21 21v.01"/><path d="M12 7v3a2 2 0 0 1-2 2H7"/><path d="M3 12h.01"/><path d="M12 3h.01"/><path d="M12 16v.01"/><path d="M16 12h1"/><path d="M21 12v.01"/><path d="M12 21v-1"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2: HFire Admin App -->
+          <div class="glass-card rounded-2xl p-5 border border-zinc-800 hover:border-orange-500/60 transition-all text-left space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-2.5 py-1 rounded-full bg-zinc-800 border border-zinc-700 text-zinc-300 text-[11px] font-bold uppercase tracking-wider">
+                Admin App
+              </span>
+              <span class="text-xs font-mono text-zinc-400">
+                <span data-bind="adminAppVersion">v1.0.0</span> • <span data-bind="adminAppSize">12.0 MB</span>
+              </span>
+            </div>
+
+            <div>
+              <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-zinc-400"></span>
+                HFire Admin
+              </h3>
+              <p class="text-xs text-zinc-400 mt-1">Management companion app for system administrators & owners.</p>
+            </div>
+
+            <div class="pt-2 flex items-center gap-2">
+              <button id="download-admin-btn" class="flex-1 py-3 px-4 rounded-xl bg-zinc-900 hover:bg-orange-500 hover:text-black border border-orange-500/40 text-orange-400 font-extrabold text-sm glow-orange-btn flex items-center justify-center gap-2 transition-all cursor-pointer">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>Download Admin APK</span>
+              </button>
+              <button data-qr-target="admin" class="open-qr-trigger p-3 rounded-xl bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 hover:border-orange-500/50 text-zinc-300 hover:text-white transition-all flex items-center justify-center cursor-pointer" title="Scan QR Code for Admin App">
+                <svg class="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect width="5" height="5" x="3" y="3" rx="1"/><rect width="5" height="5" x="16" y="3" rx="1"/><rect width="5" height="5" x="3" y="16" rx="1"/><path d="M21 16h-3a2 2 0 0 0-2 2v3"/><path d="M21 21v.01"/><path d="M12 7v3a2 2 0 0 1-2 2H7"/><path d="M3 12h.01"/><path d="M12 3h.01"/><path d="M12 16v.01"/><path d="M16 12h1"/><path d="M21 12v.01"/><path d="M12 21v-1"/></svg>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Chrome "Harmful File" Helpful Notice -->
+        <div id="safety-notice-banner" class="hidden flex items-start gap-3 p-4 rounded-xl bg-orange-950/20 border border-orange-500/30 text-left text-xs text-orange-200">
+          <svg class="w-5 h-5 text-orange-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <div>
+            <span class="font-bold text-orange-300">Browser Notice:</span> If Chrome or Android prompts <em>"File might be harmful"</em>, tap <strong>"Download anyway"</strong>. This is standard security caution for all third-party APK files outside Google Play.
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Right: Logo Showcase Card -->
+      <div class="lg:col-span-5 flex justify-center">
+        <div class="relative w-full max-w-sm">
+          <!-- Ambient Glow Backdrop -->
+          <div class="absolute -inset-1 rounded-3xl bg-gradient-to-tr from-orange-600 to-red-600 opacity-30 blur-2xl"></div>
+          
+          <!-- Card Container -->
+          <div class="relative glass-card rounded-3xl p-8 border border-orange-500/30 flex flex-col items-center text-center shadow-2xl">
+            <!-- Logo with flame frame -->
+            <div class="w-44 h-56 rounded-2xl bg-black border-2 border-orange-500/50 p-3 flex items-center justify-center overflow-hidden logo-flame-container shadow-[0_0_30px_rgba(249,115,22,0.35)] mb-6">
+              <img src="/assets/h-fire_logo.png" alt="HFire App Logo" class="w-full h-full object-contain filter drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
+            </div>
+
+            <div class="space-y-1">
+              <h2 class="text-2xl font-black text-white tracking-wide">HFIRE ANDROID</h2>
+              <p class="text-xs text-orange-400 font-medium tracking-wider uppercase">Official Package Distribution</p>
+            </div>
+
+            <!-- Quick Meta List -->
+            <div class="w-full mt-6 pt-5 border-t border-zinc-800/80 space-y-2.5 text-xs text-left">
+              <div class="flex justify-between items-center text-zinc-400">
+                <span>User App</span>
+                <span data-bind="userAppVersion" class="text-white font-mono font-semibold">v1.0.0</span>
+              </div>
+              <div class="flex justify-between items-center text-zinc-400">
+                <span>Admin App</span>
+                <span data-bind="adminAppVersion" class="text-orange-400 font-mono font-semibold">v1.0.0</span>
+              </div>
+              <div class="flex justify-between items-center text-zinc-400">
+                <span>Play Protect</span>
+                <span class="text-emerald-400 font-medium flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                  Safe & Verified
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <!-- QR CODE MODAL -->
+  <div id="qr-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4">
+    <!-- Backdrop -->
+    <div id="qr-backdrop" class="fixed inset-0 bg-black/80 backdrop-blur-sm"></div>
+    
+    <!-- Modal Dialog -->
+    <div class="relative glass-card bg-zinc-950 border border-orange-500/40 rounded-3xl p-6 sm:p-8 max-w-sm w-full text-center space-y-5 shadow-2xl z-10">
+      <div class="flex items-center justify-between">
+        <h3 class="text-lg font-bold text-white flex items-center gap-2">
+          <span id="qr-modal-title" class="text-orange-500">HFire App</span> QR Code
+        </h3>
+        <button id="close-qr-btn" class="text-zinc-400 hover:text-white p-1 rounded-lg hover:bg-zinc-850 cursor-pointer">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <p class="text-xs text-zinc-400">
+        Scan this QR code with your phone camera or TV barcode scanner to download directly to your device.
+      </p>
+
+      <!-- QR Canvas Box -->
+      <div class="p-4 bg-white rounded-2xl flex items-center justify-center shadow-inner mx-auto max-w-[240px]">
+        <div id="qrcode-canvas-container" class="flex items-center justify-center"></div>
+      </div>
+
+      <div class="text-[11px] text-zinc-400">
+        Direct link: <span class="font-mono text-orange-400">/download</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 opacity-0 translate-y-4 pointer-events-none transition-all duration-300">
+    <div class="flex items-center gap-3 px-5 py-3.5 rounded-2xl bg-zinc-900 border border-orange-500 text-white shadow-2xl">
+      <span class="w-2.5 h-2.5 rounded-full bg-orange-500 animate-pulse"></span>
+      <span id="toast-message" class="text-sm font-medium">Notification message</span>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-orange-500/15 bg-black py-12 mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-zinc-500">
+      <div class="flex items-center gap-3">
+        <img src="/assets/h-fire_logo.png" alt="HFire" class="w-7 h-7 object-contain">
+        <span class="text-zinc-300 font-semibold">HFire Official APK Downloader</span>
+        <span>•</span>
+        <span>Version <span data-bind="version">1.0.0</span></span>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <a href="/" class="hover:text-zinc-300">Home</a>
+      </div>
+
+      <div>
+        &copy; 2026 HFire. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/js/qrcode.min.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
